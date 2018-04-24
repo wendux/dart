@@ -102,7 +102,7 @@ class Coverage {
       'run',
       'coverage:format_coverage',
       '-l',
-      '-package=.packages',
+      '--package=.packages',
       '-i',
       collectionOutput.path,
       '-o',
