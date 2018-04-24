@@ -65,7 +65,7 @@ class Coverage {
         log.info(await test.process.stderr.transform(UTF8.decoder).join(''));
       } catch(e) {}
       log.severe('Testing failed.');
-      test.kill();f
+      test.kill();
       return false;
     }
     int port = test is BrowserTest ? (test as BrowserTest).observatoryPort : _defaultObservatoryPort;
